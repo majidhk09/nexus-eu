@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+  body {
+    @apply bg-cream text-ink antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  /* Lithuanian flag stripe — yellow/green/red */
+  .flag-stripe {
+    @apply h-1 w-16;
+    background-image: linear-gradient(
+      to right,
+      #F4C430 0%, #F4C430 33.33%,
+      #0C7C59 33.33%, #0C7C59 66.66%,
+      #C8102E 66.66%, #C8102E 100%
+    );
+  }
+
+  .flag-stripe-wide {
+    @apply h-1.5 w-24;
+    background-image: linear-gradient(
+      to right,
+      #F4C430 0%, #F4C430 33.33%,
+      #0C7C59 33.33%, #0C7C59 66.66%,
+      #C8102E 66.66%, #C8102E 100%
+    );
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-navy text-white font-semibold px-6 py-3 rounded-full hover:bg-navy-dark transition-all shadow-md hover:shadow-lg;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 bg-gold text-navy-dark font-bold px-6 py-3 rounded-full hover:brightness-95 transition-all shadow-md;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 bg-white text-navy font-semibold px-6 py-3 rounded-full border-2 border-navy hover:bg-navy hover:text-white transition-all;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold px-6 py-3 rounded-full hover:bg-[#1da851] transition-all shadow-md hover:shadow-lg;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-line p-6 hover:shadow-md transition-all;
+  }
+
+  .kicker {
+    @apply text-xs font-bold uppercase tracking-widest text-lithGreen;
+  }
+}
