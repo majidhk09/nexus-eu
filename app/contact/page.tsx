@@ -21,7 +21,7 @@ import { UNIVERSITIES } from "@/data/universities";
 //
 // All form submissions will arrive in your email inbox automatically.
 // ============================================================
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID_HERE";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mpqnlvvz";
 
 function ContactForm() {
   const searchParams = useSearchParams();
